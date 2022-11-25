@@ -7,7 +7,7 @@ import { ElementsModule } from './elements/elements.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
