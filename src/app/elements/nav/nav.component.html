@@ -1,1 +1,38 @@
-<p>nav works!</p>
+<div class="container-fluid">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light border-1 border-bottom border-warning fixed-top">
+    <div class="container">
+      <!-- Branding -->
+      <a href="#" class="navbar-brand">
+        <img src="assets/logo.png" alt="logo Urbalab" />
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="MenuNavegacion" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-tpggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Todas las categorías
+                </a>
+                <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Electrónica</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Relojes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Buscar</button>
+          </form>
+      </div>
+      <div id="MenuNavegacion" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
