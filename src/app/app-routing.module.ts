@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './elements/nav/nav.component';
 import { LoginComponent } from './elements/login/login.component';
 import { FooterComponent } from './elements/footer/footer.component';
+import { RegisterComponent } from './elements/register/register.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'footer',
     component: FooterComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
 ];
 
