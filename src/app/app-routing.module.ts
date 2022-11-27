@@ -7,6 +7,7 @@ import { FooterComponent } from './elements/footer/footer.component';
 import { RegisterComponent } from './elements/register/register.component';
 import { TableUsersComponent } from './elements/table-users/table-users.component';
 import { CategoriesComponent } from './elements/categories/categories.component';
+import { PerfilComponent } from './elements/perfil/perfil.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'categories',
     component: CategoriesComponent,
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent,
   },
 ];
 
