@@ -11,6 +11,6 @@ import { PerfilComponent } from './perfil/perfil.component';
 @NgModule({
   declarations: [NavComponent, LoginComponent, FooterComponent, RegisterComponent, TableUsersComponent, CategoriesComponent, PerfilComponent],
   imports: [CommonModule],
-  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent]
+  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent]
 })
 export class ElementsModule {}
