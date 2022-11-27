@@ -8,6 +8,7 @@ import { RegisterComponent } from './elements/register/register.component';
 import { TableUsersComponent } from './elements/table-users/table-users.component';
 import { CategoriesComponent } from './elements/categories/categories.component';
 import { PerfilComponent } from './elements/perfil/perfil.component';
+import { ShopCartComponent } from './carrito/shop-cart/shop-cart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'perfil',
     component: PerfilComponent,
+  },
+  {
+    path: 'shopcart',
+    component: ShopCartComponent,
   },
 ];
 
