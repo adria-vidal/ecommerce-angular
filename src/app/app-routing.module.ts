@@ -12,6 +12,8 @@ import { PerfilComponent } from './elements/perfil/perfil.component';
 import { ShopCartComponent } from './carrito/shop-cart/shop-cart.component';
 
 import { NewsletterComponent } from './elements/newsletter/newsletter.component';
+import { ArticulosComponent } from './elements/articulos/articulos.component';
+import { DetalleProductoComponent } from './elements/detalle-producto/detalle-producto.component';
 
 
 const routes: Routes = [
@@ -53,6 +55,14 @@ const routes: Routes = [
     path: 'newsletter',
     component: NewsletterComponent,
 
+  },
+  {
+    path: 'articulos',
+    component: ArticulosComponent,
+  },
+  {
+    path: 'detalleproducto',
+    component: DetalleProductoComponent,
   },
 ];
 

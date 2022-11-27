@@ -7,6 +7,7 @@ import { ElementsModule } from './elements/elements.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarritoModule } from './carrito/carrito.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
