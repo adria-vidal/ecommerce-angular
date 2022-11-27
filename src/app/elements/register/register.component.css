@@ -53,6 +53,12 @@ body {
   color: #ff9f17;
   font-size: 10px;
 }
+
+.wrap .user input:required ~ label::after{
+  content: "  *";
+		color: rgb(221, 62, 62);
+		font-weight: bold;
+}
 .wrap form a {
   position: relative;
   display: inline-block;
