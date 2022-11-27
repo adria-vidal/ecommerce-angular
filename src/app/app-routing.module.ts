@@ -5,8 +5,11 @@ import { NavComponent } from './elements/nav/nav.component';
 import { LoginComponent } from './elements/login/login.component';
 import { FooterComponent } from './elements/footer/footer.component';
 import { RegisterComponent } from './elements/register/register.component';
+import { TableUsersComponent } from './elements/table-users/table-users.component';
+import { CategoriesComponent } from './elements/categories/categories.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'categories', pathMatch: 'full' },
   {
     path: 'nav',
     component: NavComponent,
@@ -22,6 +25,14 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'tableUsers',
+    component: TableUsersComponent,
+  },
+  {
+    path: 'categories',
+    component: CategoriesComponent,
   },
 ];
 
