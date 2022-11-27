@@ -10,6 +10,7 @@ import { CategoriesComponent } from './elements/categories/categories.component'
 import { PerfilComponent } from './elements/perfil/perfil.component';
 import { NewsletterComponent } from './elements/newsletter/newsletter.component';
 import { ArticulosComponent } from './elements/articulos/articulos.component';
+import { DetalleProductoComponent } from './elements/detalle-producto/detalle-producto.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'articulos',
     component: ArticulosComponent,
+  },
+  {
+    path: 'detalleproducto',
+    component: DetalleProductoComponent,
   },
 ];
 

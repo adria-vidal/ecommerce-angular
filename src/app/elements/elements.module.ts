@@ -9,10 +9,11 @@ import { CategoriesComponent } from './categories/categories.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ArticulosComponent } from './articulos/articulos.component';
+import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 
 @NgModule({
-  declarations: [NavComponent, LoginComponent, FooterComponent, RegisterComponent, TableUsersComponent, CategoriesComponent, PerfilComponent, NewsletterComponent, ArticulosComponent],
+  declarations: [NavComponent, LoginComponent, FooterComponent, RegisterComponent, TableUsersComponent, CategoriesComponent, PerfilComponent, NewsletterComponent, ArticulosComponent, DetalleProductoComponent],
   imports: [CommonModule],
-  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent,NewsletterComponent,ArticulosComponent]
+  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent,NewsletterComponent,ArticulosComponent,DetalleProductoComponent]
 })
 export class ElementsModule {}
