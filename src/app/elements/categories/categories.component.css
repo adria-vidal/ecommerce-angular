@@ -1,27 +1,19 @@
-.full
-{
-  height: 60vh;
-}
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-
-
-
-
 body {
-
   padding: 1rem;
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.card_image{
+.card_image {
   height: 250px;
 }
+
 img {
   height: 100%;
   vertical-align: middle;
@@ -102,4 +94,3 @@ img {
   margin-bottom: 1.25rem;
   font-weight: 400;
 }
-
