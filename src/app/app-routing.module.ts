@@ -9,6 +9,7 @@ import { TableUsersComponent } from './elements/table-users/table-users.componen
 import { CategoriesComponent } from './elements/categories/categories.component';
 import { PerfilComponent } from './elements/perfil/perfil.component';
 import { NewsletterComponent } from './elements/newsletter/newsletter.component';
+import { ArticulosComponent } from './elements/articulos/articulos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'newsletter',
     component: NewsletterComponent,
+  },
+  {
+    path: 'articulos',
+    component: ArticulosComponent,
   },
 ];
 

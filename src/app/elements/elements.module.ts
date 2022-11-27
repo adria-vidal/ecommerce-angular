@@ -13,6 +13,6 @@ import { ArticulosComponent } from './articulos/articulos.component';
 @NgModule({
   declarations: [NavComponent, LoginComponent, FooterComponent, RegisterComponent, TableUsersComponent, CategoriesComponent, PerfilComponent, NewsletterComponent, ArticulosComponent],
   imports: [CommonModule],
-  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent]
+  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent,NewsletterComponent,ArticulosComponent]
 })
 export class ElementsModule {}
