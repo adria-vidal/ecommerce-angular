@@ -1,33 +1,33 @@
 <!-- TODO mostrar todas bien y bucles -->
 <app-nav></app-nav>
-<div class="container  overflow-hidden text-center py-5 ">
+<div class="container margin overflow-hidden text-center  ">
   <div class="row gy-5 h-100 ">
-    <div class="col-lg-6 col-sm-12 justify-content-center">
-      <div class="main">
+    <div class="col-lg-6 col-sm-12 justify-content-center" *ngFor="let category of categories">
 
-        <ul class="cards ">
-          <li class="cards_item w-100">
-            <div class="card w-100">
-              <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
-              <div class="card_content">
-                <h2 class="card_title">Electrónica</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+
+      <ul class="cards ">
+        <li class="cards_item w-100">
+          <div class="card w-100">
+            <div class="card_image"><img src="{{category.image}}"></div>
+            <div class="card_content">
+              <h2 class="card_title">{{category.name}}</h2>
+              <p class="card_text">Entra para ver los productos de {{category.name}}</p>
               <a class="text-decoration-none" href="articulos"><button class="btn card_btn">Ver más</button></a>
-              
-              </div>
+
             </div>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-
-    <div class="row gy-5 h-100 ">
-      <div class="col-lg-12 col-sm-12 justify-content-center">
-        <app-newsletter></app-newsletter>
-      </div>
+          </div>
+        </li>
+      </ul>
 
     </div>
   </div>
+
+  <div class="row gy-5 h-100 ">
+    <div class="col-lg-12 col-sm-12 justify-content-center">
+      <app-newsletter></app-newsletter>
+    </div>
+
+  </div>
 </div>
+
 <app-footer></app-footer>

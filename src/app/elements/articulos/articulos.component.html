@@ -1,53 +1,50 @@
 <app-nav></app-nav>
 <div class="container position-relative text-center py-5">
   <header class="position-relative text-center text-white mb-5">
-      <img src="assets/img/banner2.jpg" class="w-100" alt="Banner">
-      <div class="position-absolute top-50 start-50 translate-middle-x w-100 px-3">
-          <h1 class="display-4">Novedades</h1>
-      </div>
+    <img src="assets/img/banner2.jpg" class="w-100" alt="Banner">
+    <div class="position-absolute top-50 start-50 translate-middle-x w-100 px-3">
+      <h1 class="display-4">Novedades</h1>
+    </div>
   </header>
   <div class="row">
-      <div class="col col-lg-3 text-start">
-          <h3>Categorías</h3>
-          <ul class="nav flex-column">
-              <li class="nav-item">
-                  <a href="#" class="nav-link text-muted">
-                      Relojes
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link text-muted">
-                      Electrónica
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link text-muted">
-                      Ropa
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link text-muted">
-                      Otros
-                  </a>
-              </li>
-          </ul>
+    <div class="col col-lg-3 text-start">
+      <h3>Categorías</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">
+            Relojes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">
+            Electrónica
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">
+            Ropa
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">
+            Otros
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col col-9 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
+      <div class="card m-2">
+        <a href="./product.html">
+          <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">
+            {{articulo.name}}
+          </p>
+          <small class="text-secondary">{{articulo.price}}</small>
+        </div>
       </div>
-      <div class="col col-9 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                     {{articulo.name}}
-                  </p>
-                  <small class="text-secondary">{{articulo.price}}</small>
-              </div>
-          </div>
-
-
-
-
-      </div>
+    </div>
   </div>
+</div>
 <app-footer></app-footer>
