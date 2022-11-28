@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ConsultasapiService {
   constructor(private http: HttpClient) {}
-  
+
   retornar() {
     return this.http.get(`https://api.escuelajs.co/api/v1/products`);
 
@@ -14,5 +14,9 @@ export class ConsultasapiService {
   // obtener id del personaje
   getId(id: number) {
     return this.http.get(`https://api.escuelajs.co/api/v1/products${id}`);
+  }
+
+  getCategory(){
+    return this.http.get(`https://api.escuelajs.co/api/v1/categories`);
   }
 }
