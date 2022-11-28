@@ -17,4 +17,8 @@ export class CategoriesComponent implements OnInit {
       this.categories = result;
     });
   }
+
+  setCategory(id:any){
+    sessionStorage.setItem("idCategory",id)
+  }
 }
