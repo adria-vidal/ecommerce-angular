@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "auth-46c56": {
+      "hosting": {
+        "ecommerce-angular": [
+          "auth-46c56"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "auth-46c56"
+  }
+}
