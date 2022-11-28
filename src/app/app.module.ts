@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarritoModule } from './carrito/carrito.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     ElementsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarritoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
