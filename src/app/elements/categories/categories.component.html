@@ -12,7 +12,7 @@
             <div class="card_content">
               <h2 class="card_title">{{category.name}}</h2>
               <p class="card_text">Entra para ver los productos de {{category.name}}</p>
-              <a class="text-decoration-none" href="articulos"><button class="btn card_btn">Ver más</button></a>
+              <a class="text-decoration-none" href="articulos"><button (click)="setCategory(category.id)" class="btn card_btn">Ver más</button></a>
 
             </div>
           </div>

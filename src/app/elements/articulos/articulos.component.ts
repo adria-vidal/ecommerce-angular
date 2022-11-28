@@ -8,7 +8,7 @@ import { ConsultasapiService } from 'src/app/services/consultasapi.service';
 })
 export class ArticulosComponent implements OnInit {
 
-
+  claveCategory:any = sessionStorage.getItem("idCategory");
   articulos: any;
 
   constructor(private consulta: ConsultasapiService) {}
@@ -19,4 +19,5 @@ export class ArticulosComponent implements OnInit {
       this.articulos = result;
     });
   }
+
 }
