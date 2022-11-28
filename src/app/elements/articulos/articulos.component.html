@@ -35,13 +35,13 @@
       <div class="col col-9 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
           <div class="card m-2">
               <a href="./product.html">
-                  <img src="assets/img/clothes/img1.jpg" class="card-img-top" height="300" alt="Product">
+                  <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
               </a>
               <div class="card-body">
                   <p class="card-text fw-bold">
-                     {{articulo[0].title}}
+                     {{articulo.name}}
                   </p>
-                  <small class="text-secondary">299€</small>
+                  <small class="text-secondary">{{articulo.price}}</small>
               </div>
           </div>
 
