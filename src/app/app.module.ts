@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
@@ -17,7 +18,8 @@ import { CarritoModule } from './carrito/carrito.module';
     ElementsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarritoModule
+    CarritoModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

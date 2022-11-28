@@ -1,5 +1,5 @@
 <app-nav></app-nav>
-<div class="container position-relative text-center">
+<div class="container position-relative text-center py-5">
   <header class="position-relative text-center text-white mb-5">
       <img src="assets/img/banner2.jpg" class="w-100" alt="Banner">
       <div class="position-absolute top-50 start-50 translate-middle-x w-100 px-3">
@@ -32,95 +32,22 @@
               </li>
           </ul>
       </div>
-      <div class="col col-9 d-flex flex-wrap justify-content-between">
+      <div class="col col-9 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
           <div class="card m-2">
               <a href="./product.html">
                   <img src="assets/img/clothes/img1.jpg" class="card-img-top" height="300" alt="Product">
               </a>
               <div class="card-body">
                   <p class="card-text fw-bold">
-                      Hugo Boss
+                     {{articulo[0].title}}
                   </p>
                   <small class="text-secondary">299€</small>
               </div>
           </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Calvin Klein
-                  </p>
-                  <small class="text-secondary">159€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img3.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Hilfiger
-                  </p>
-                  <small class="text-secondary">90€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img4.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Hugo Boss
-                  </p>
-                  <small class="text-secondary">299€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img1.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Hugo Boss
-                  </p>
-                  <small class="text-secondary">299€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Calvin Klein
-                  </p>
-                  <small class="text-secondary">159€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img3.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Hilfiger
-                  </p>
-                  <small class="text-secondary">90€</small>
-              </div>
-          </div>
-          <div class="card m-2">
-              <a href="./product.html">
-                  <img src="assets/img/clothes/img4.jpg" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                      Hugo Boss
-                  </p>
-                  <small class="text-secondary">299€</small>
-              </div>
-          </div>
+
+
+
+
       </div>
   </div>
 <app-footer></app-footer>
