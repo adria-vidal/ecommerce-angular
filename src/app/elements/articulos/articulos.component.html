@@ -11,40 +11,42 @@
       <h3>Categorías</h3>
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a href="#" class="nav-link text-muted">
+          <a href="articulos" class="nav-link text-muted">
             Relojes
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link text-muted">
+          <a href="articulos" class="nav-link text-muted">
             Electrónica
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link text-muted">
+          <a href="articulos" class="nav-link text-muted">
             Ropa
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link text-muted">
+          <a href="articulos" class="nav-link text-muted">
             Otros
           </a>
         </li>
       </ul>
     </div>
-    <div class="col col-9 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
-      <div class="card m-2">
-        <a href="./product.html">
-          <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
-        </a>
-        <div class="card-body">
-          <p class="card-text fw-bold">
-            {{articulo.name}}
-          </p>
-          <small class="text-secondary">{{articulo.price}}</small>
-        </div>
+    <div class="row">
+      <div class="col-4 d-flex flex-wrap justify-content-between" *ngFor="let articulo of articulos">
+          <div class="card m-2">
+              <a href="detalleproducto">
+                  <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
+              </a>
+              <div class="card-body">
+                  <p class="card-text fw-bold">
+                    {{articulo.title}}
+                  </p>
+                  <small class="text-secondary">{{articulo.price}} €</small>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
   </div>
 </div>
 <app-footer></app-footer>
