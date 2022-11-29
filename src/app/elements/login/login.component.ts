@@ -8,8 +8,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  
   formLogin: FormGroup;
-
   constructor(private userService: UserService, private router: Router) {
     this.formLogin = new FormGroup({
       email: new FormControl(),
