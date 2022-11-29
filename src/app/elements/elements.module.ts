@@ -11,6 +11,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NewsletterComponent,
     ArticulosComponent,
     DetalleProductoComponent,
+    ContactoComponent,
   ],
   imports: [CommonModule, FormsModule,ReactiveFormsModule],
   exports: [
@@ -35,7 +37,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NewsletterComponent,
     ArticulosComponent,
     DetalleProductoComponent,
-    FormsModule
+    FormsModule,
+    ContactoComponent
   ],
 })
 export class ElementsModule {}
