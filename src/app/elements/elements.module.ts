@@ -11,7 +11,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxPaginationModule } from 'ngx-pagination';
+
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ArticulosComponent,
     DetalleProductoComponent,
   ],
-  imports: [CommonModule, FormsModule,ReactiveFormsModule, NgxPaginationModule],
+  imports: [CommonModule, FormsModule,ReactiveFormsModule],
   exports: [
     NavComponent,
     LoginComponent,
