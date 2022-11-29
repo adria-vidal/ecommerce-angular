@@ -29,7 +29,6 @@ import { ContactoComponent } from './elements/contacto/contacto.component';
     ReactiveFormsModule,
     FormsModule,
     NgxPaginationModule,
-    ContactoComponent,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
   ],
