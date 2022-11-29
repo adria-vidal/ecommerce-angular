@@ -12,8 +12,28 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 
 @NgModule({
-  declarations: [NavComponent, LoginComponent, FooterComponent, RegisterComponent, TableUsersComponent, CategoriesComponent, PerfilComponent, NewsletterComponent, ArticulosComponent, DetalleProductoComponent],
+  declarations: [
+    NavComponent,
+    LoginComponent,
+    FooterComponent,
+    RegisterComponent,
+    TableUsersComponent,
+    CategoriesComponent,
+    PerfilComponent,
+    NewsletterComponent,
+    ArticulosComponent,
+    DetalleProductoComponent,
+  ],
   imports: [CommonModule],
-  exports: [NavComponent,LoginComponent,FooterComponent,RegisterComponent,PerfilComponent,NewsletterComponent,ArticulosComponent,DetalleProductoComponent]
+  exports: [
+    NavComponent,
+    LoginComponent,
+    FooterComponent,
+    RegisterComponent,
+    PerfilComponent,
+    NewsletterComponent,
+    ArticulosComponent,
+    DetalleProductoComponent,
+  ],
 })
 export class ElementsModule {}

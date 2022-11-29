@@ -7,19 +7,20 @@
     </div>
   </header>
   <div class="row">
-      <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12" *ngFor="let articulo of articulos">
-          <div class="card m-2">
-              <a href="detalleproducto">
-                  <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
-              </a>
-              <div class="card-body">
-                  <p class="card-text fw-bold">
-                    {{articulo.title}}
-                  </p>
-                  <small class="text-secondary">{{articulo.price}} €</small>
-              </div>
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12" *ngFor="let articulo of articulos">
+      <a href="detalleproducto/{{articulo.id}}">
+        <div class="card m-2">
+          <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
+          <div class="card-body">
+            <p class="card-text fw-bold">
+              {{articulo.title}}
+            </p>
+            <small class="text-secondary">{{articulo.price}} €</small>
           </div>
-      </div>
+        </div>
+      </a>
+
+    </div>
   </div>
 </div>
 <app-footer></app-footer>
