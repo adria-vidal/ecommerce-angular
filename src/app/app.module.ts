@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarritoModule } from './carrito/carrito.module';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { CarritoModule } from './carrito/carrito.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     CarritoModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

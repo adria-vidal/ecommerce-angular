@@ -10,6 +10,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { DetalleProductoComponent } from './detalle-producto/detalle-producto.co
     ArticulosComponent,
     DetalleProductoComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule,ReactiveFormsModule],
   exports: [
     NavComponent,
     LoginComponent,
@@ -34,6 +35,7 @@ import { DetalleProductoComponent } from './detalle-producto/detalle-producto.co
     NewsletterComponent,
     ArticulosComponent,
     DetalleProductoComponent,
+    FormsModule
   ],
 })
 export class ElementsModule {}
