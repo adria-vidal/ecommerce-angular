@@ -7,7 +7,7 @@
     </div>
   </header>
   <div class="row">
-    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 mt-3" *ngFor="let articulo of articulos | paginate: {itemsPerPage: 6, currentPage: page}">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 mt-3" *ngFor="let articulo of articulos | paginate: {itemsPerPage: 9, currentPage: page}">
       <a href="detalleproducto/{{articulo.id}}">
         <div class="card m-2">
           <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
@@ -20,9 +20,10 @@
         </div>
       </a>
     </div>
+    <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
   </div>
 </div>
-<pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+
 <app-footer></app-footer>
 
 
