@@ -57,11 +57,11 @@ const routes: Routes = [
 
   },
   {
-    path: 'articulos',
+    path: 'articulos/:id',
     component: ArticulosComponent,
   },
   {
-    path: 'detalleproducto',
+    path: 'detalleproducto/:id',
     component: DetalleProductoComponent,
   },
 ];

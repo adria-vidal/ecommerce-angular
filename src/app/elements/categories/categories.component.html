@@ -3,8 +3,6 @@
 <div class="container margin overflow-hidden text-center  ">
   <div class="row gy-5 h-100 ">
     <div class="col-lg-6 col-sm-12 justify-content-center" *ngFor="let category of categories">
-
-
       <ul class="cards ">
         <li class="cards_item w-100">
           <div class="card w-100">
@@ -12,13 +10,11 @@
             <div class="card_content">
               <h2 class="card_title">{{category.name}}</h2>
               <p class="card_text">Entra para ver los productos de {{category.name}}</p>
-              <a class="text-decoration-none" href="articulos"><button (click)="setCategory(category.id)" class="btn card_btn">Ver más</button></a>
-
+              <a class="text-decoration-none" href="articulos/{{category.id}}"><button class="btn card_btn">Ver más</button></a>
             </div>
           </div>
         </li>
       </ul>
-
     </div>
   </div>
 

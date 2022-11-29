@@ -1,116 +1,123 @@
-<div class="row py-5 g-5">
-  <div class="col-12 col-lg-6">
-      <img src="assets/img/clothes/img4.jpg" class="m1 w-100 sliderMainImage" data-bs-toggle="modal" data-bs-target="#imageModal" alt="">
+<app-nav></app-nav>
+<div class="container">
+  <div class="row margin py-5 g-5">
+    <div class="col-12 col-lg-6">
+      <img src="{{articulo.images}}" class="m1 w-100 sliderMainImage" data-bs-toggle="modal"
+        data-bs-target="#imageModal" alt="">
       <div>
-          <img src="assets/img/clothes/img4.jpg" width="60" class="m1 sliderThumb">
-          <img src="assets/img/clothes/img4.5.jpg" width="60" class="m1 sliderThumb">
+        <img src="{{articulo.images[1]}}" width="300" class="m1 sliderThumb">
+        <img src="{{articulo.images[2]}}" width="300" class="m1 sliderThumb">
       </div>
-  </div>
-  <div class="col-12 col-lg-6">
+    </div>
+    <div class="col-12 col-lg-6">
       <h2 id="productName">
-          Abrigo IVY OAK CINDY
+        {{articulo.title}}
       </h2>
       <small class="text-muted">
-          Articulo: 067251
+        Identificador: {{articulo.id}}
       </small>
       <h4 class="my-4">
-      <span id="price">889 EUR</span>
+        <span id="price">{{articulo.price}} EUR</span>
       </h4>
       <label for="selectSize" class="text-muted">
-          Size
+        Size
       </label>
       <select name="selectSize" id="size" class="form-select">
-          <option selected>S</option>
-          <option value="1">M</option>
-          <option value="2">L</option>
-          <option value="3">XL</option>
+        <option selected>S</option>
+        <option value="1">M</option>
+        <option value="2">L</option>
+        <option value="3">XL</option>
       </select>
       <div class="d-grid my-4">
-          <button class="btn btn-lg btn-dark" type="button" id="bagBtn">
-              Añade a la Cesta
-          </button>
+        <button class="btn btn-lg btn-dark" type="button" id="bagBtn">
+          Añade a la Cesta
+        </button>
       </div>
       <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>Descripción</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse-show" aria-labelledby="headingOne">
+            <div class="accordion-body">
+              {{articulo.description}}
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
           <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <strong>Descripción</strong>
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <strong>Disponible en Tienda</strong>
               </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse-show" aria-labelledby="headingOne">
-                  <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, tempora!
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, eius odio. Dolores deserunt necessitatibus cupiditate doloribus, natus et commodi pariatur!
-                  </div>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse-show" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae. Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, tempora!
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque voluptate rem porro modi dicta
+                temporibus natus dolor laborum qui!
               </div>
+            </div>
           </div>
-          <div class="accordion-item">
-              <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      <strong>Disponible en Tienda</strong>
-                  </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse-show" aria-labelledby="headingTwo">
-                      <div class="accordion-body">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, tempora!
-                          <br />
-                          <br />
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque voluptate rem porro modi dicta temporibus natus dolor laborum qui!
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-  </div>
-  <h2 class="display-6 py-5 text-center">
+    </div>
+    <h2 class="display-6 py-5 text-center">
       Tal Vez Te Interese
-  </h2>
+    </h2>
 
-  <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
+    <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
       <div class="card m-2">
-          <a href="#">
-              <img src="assets/img/clothes/img1.jpg" class="card-img-top" height="300" alt="Product">
-          </a>
-          <div class="card-body">
-              <p class="card-text fw-bold">
-                  Hugo Boss
-              </p>
-              <small class="text-secondary">299€</small>
-          </div>
+        <a href="#">
+          <img src="assets/img/clothes/img1.jpg" class="card-img-top" height="300" alt="Product">
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">
+            Hugo Boss
+          </p>
+          <small class="text-secondary">299€</small>
+        </div>
       </div>
       <div class="card m-2">
-          <a href="#">
-              <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
-          </a>
-          <div class="card-body">
-              <p class="card-text fw-bold">
-                  Calvin Klein
-              </p>
-              <small class="text-secondary">159€</small>
-          </div>
+        <a href="#">
+          <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">
+            Calvin Klein
+          </p>
+          <small class="text-secondary">159€</small>
+        </div>
       </div>
       <div class="card m-2">
-          <a href="#">
-              <img src="assets/img/clothes/img3.jpg" class="card-img-top" height="300" alt="Product">
-          </a>
-          <div class="card-body">
-              <p class="card-text fw-bold">
-                  Hilfiger
-              </p>
-              <small class="text-secondary">90€</small>
-          </div>
+        <a href="#">
+          <img src="assets/img/clothes/img3.jpg" class="card-img-top" height="300" alt="Product">
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">
+            Hilfiger
+          </p>
+          <small class="text-secondary">90€</small>
+        </div>
       </div>
       <div class="card m-2">
-          <a href="#">
-              <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
-          </a>
-          <div class="card-body">
-              <p class="card-text fw-bold">
-                  Calvin Klein
-              </p>
-              <small class="text-secondary">159€</small>
-          </div>
+        <a href="#">
+          <img src="assets/img/clothes/img2.jpg" class="card-img-top" height="300" alt="Product">
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">
+            Calvin Klein
+          </p>
+          <small class="text-secondary">159€</small>
+        </div>
       </div>
+    </div>
   </div>
 </div>
