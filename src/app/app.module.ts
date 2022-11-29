@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxPaginationModule } from "ngx-pagination";
+
 
 import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
@@ -28,7 +28,6 @@ import { ContactoComponent } from './elements/contacto/contacto.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    NgxPaginationModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
   ],
