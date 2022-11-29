@@ -11,6 +11,7 @@ export class ArticulosComponent implements OnInit {
   claveCategory: any = sessionStorage.getItem('idCategory');
   articulos: any;
   id: any = null;
+  public page: number;
 
   constructor(
     private consulta: ConsultasapiService,
