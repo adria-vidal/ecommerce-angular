@@ -12,7 +12,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
-import { ContactoComponent } from './elements/contacto/contacto.component';
+
 
 
 @NgModule({
