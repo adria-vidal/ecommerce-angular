@@ -11,6 +11,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactoComponent } from './contacto/contacto.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 
@@ -26,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NewsletterComponent,
     ArticulosComponent,
     DetalleProductoComponent,
+    ContactoComponent,
+    NosotrosComponent,
   ],
   imports: [CommonModule, FormsModule,ReactiveFormsModule],
   exports: [
