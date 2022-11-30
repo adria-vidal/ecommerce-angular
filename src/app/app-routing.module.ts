@@ -15,6 +15,7 @@ import { NewsletterComponent } from './elements/newsletter/newsletter.component'
 import { ArticulosComponent } from './elements/articulos/articulos.component';
 import { DetalleProductoComponent } from './elements/detalle-producto/detalle-producto.component';
 import { ContactoComponent } from './elements/contacto/contacto.component';
+import { NosotrosComponent } from './elements/nosotros/nosotros.component';
 
 
 const routes: Routes = [
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'contacto',
     component: ContactoComponent,
+  },
+  {
+    path: 'nosotros',
+    component: NosotrosComponent,
   },
 ];
 

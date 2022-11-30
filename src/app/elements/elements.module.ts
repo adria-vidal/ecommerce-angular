@@ -12,6 +12,7 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactoComponent } from './contacto/contacto.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     ArticulosComponent,
     DetalleProductoComponent,
     ContactoComponent,
+    NosotrosComponent,
   ],
   imports: [CommonModule, FormsModule,ReactiveFormsModule],
   exports: [
@@ -38,7 +40,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     ArticulosComponent,
     DetalleProductoComponent,
     FormsModule,
-    ContactoComponent
+    ContactoComponent,
+    NosotrosComponent
   ],
 })
 export class ElementsModule {}
