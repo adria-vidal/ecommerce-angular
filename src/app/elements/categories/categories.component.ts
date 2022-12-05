@@ -21,7 +21,5 @@ export class CategoriesComponent implements OnInit {
   setCategory(id:any){
     sessionStorage.setItem("idCategory",id)
   }
-  getIdCategory(id:any){
-    
-  }
+
 }
